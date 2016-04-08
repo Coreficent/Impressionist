@@ -70,15 +70,24 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Erase"
+                android:id="@+id/buttonErase"
+                android:onClick="onButtonClickErase"/>
+            
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Clear"
                 android:id="@+id/buttonClear"
                 android:onClick="onButtonClickClear"/>
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Save"
                 android:id="@+id/buttonSave"
                 android:onClick="onButtonClickSave"/>
+
 
         </LinearLayout>
 

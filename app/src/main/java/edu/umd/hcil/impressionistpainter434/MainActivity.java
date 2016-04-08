@@ -103,14 +103,14 @@ public class MainActivity extends AppCompatActivity implements OnMenuItemClickLi
                 _impressionistView.setBrushType(BrushType.Line);
                 return true;
 
-            case R.id.menuLineSplatter:
-                Toast.makeText(this, "Line Splatter Brush", Toast.LENGTH_SHORT).show();
-                _impressionistView.setBrushType(BrushType.LineSplatter);
-                return true;
+
         }
         return false;
     }
-
+    public void onButtonClickErase(View v){
+        Toast.makeText(this, "Eraser", Toast.LENGTH_SHORT).show();
+        this._impressionistView.setBrushType(BrushType.LineSplatter);
+    }
 
     /**
      * Downloads test images to use in the assignment. Feel free to use any images you want. I only made this

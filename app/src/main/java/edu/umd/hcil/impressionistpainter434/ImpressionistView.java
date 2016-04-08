@@ -170,19 +170,17 @@ public class ImpressionistView extends View {
             int type = motionEvent.getAction();
            // Bitmap bitmap = ((BitmapDrawable) this._imageView.getDrawable()).getBitmap();
             Rect rect = this.getBitmapPositionInsideImageView(this._imageView);
-            if (type == MotionEvent.ACTION_DOWN) {
-
-            } else if (type == MotionEvent.ACTION_MOVE) {
+            if (type == MotionEvent.ACTION_MOVE) {
                 int mapX = (int) (x-rect.left);
                 int mapY = (int) (y-rect.top);
                 int color = this.texture.getPixel(mapX, mapY);
                 float size = 50;
                 this._paint.setColor(color);
                 if(this._brushType==BrushType.Circle) {
-                    float circleRadius = size;
+                    float circleRadius = (float) (size / 1.25);
                     this._offScreenCanvas.drawCircle(mapX, mapY, circleRadius, _paint);
                 }else if(this._brushType==BrushType.Square){
-                    float rectSize = size;
+                    float rectSize = (float) (size * 1.25);
                     this._offScreenCanvas.drawRect(mapX - rectSize, mapY -rectSize, mapX + rectSize, mapY + rectSize, _paint);
                 }else if(this._brushType==BrushType.Line){
                     if(this.oldX!=-1){
