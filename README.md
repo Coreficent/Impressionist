@@ -16,7 +16,7 @@ The painting is loaded onto the left side, and the canvas is on the right side.
 
 The Brush button allows the user to choose three brushes. The square brush, the circle brush, and the line brush with variable width based on user's movement of his or her finger.
 
-The Eraser button allows the user to use a soft erase to erase part of the drawing with style!
+The Eraser button allows the user to use a soft erase to erase parts of the drawing with style!
 
 The Clear button clears the entire painting.
 
